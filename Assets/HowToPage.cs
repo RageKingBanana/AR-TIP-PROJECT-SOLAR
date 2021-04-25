@@ -8,8 +8,9 @@ public class HowToPage : MonoBehaviour, IDragHandler, IEndDragHandler
     public Vector3 panelLocation;
     public float percentThreshold = 0.2f;
     public float easing = 0.5f;
-    public int totalPages = 4;
+    public int totalPages = 2;
     private int currentPage = 1;
+    private int screenDependent = Screen.height;
 
     // Start is called before the first frame update
     void Start()
@@ -23,19 +24,19 @@ public class HowToPage : MonoBehaviour, IDragHandler, IEndDragHandler
     }
     public void OnEndDrag(PointerEventData data)
     {
-        float percentage = (data.pressPosition.x - data.position.x) / Screen.width;
+        float percentage = (data.pressPosition.x - data.position.x) / screenDependent;
         if (Mathf.Abs(percentage) >= percentThreshold)
         {
             Vector3 newLocation = panelLocation;
             if (percentage > 0 && currentPage < totalPages)
             {
                 currentPage++;
-                newLocation += new Vector3(-Screen.width, 0, 0);
+                newLocation += new Vector3(-screenDependent, 0, 0);
             }
             else if (percentage < 0 && currentPage > 1)
             {
                 currentPage--;
-                newLocation += new Vector3(Screen.width, 0, 0);
+                newLocation += new Vector3(screenDependent, 0, 0);
             }
             StartCoroutine(SmoothMove(transform.position, newLocation, easing));
             panelLocation = newLocation;

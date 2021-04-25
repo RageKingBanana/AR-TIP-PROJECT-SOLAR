@@ -24,7 +24,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "1.2.1",
+      "version": "2.0.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -33,10 +33,12 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.5",
+      "version": "2.0.7",
       "depth": 0,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.test-framework": "1.1.9"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
@@ -74,7 +76,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.2.18",
+      "version": "1.4.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -95,18 +97,18 @@
       }
     },
     "com.unity.xr.arcore": {
-      "version": "3.1.8",
+      "version": "4.0.12",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.xr.arsubsystems": "3.1.6",
-        "com.unity.xr.management": "3.2.13",
+        "com.unity.xr.arsubsystems": "4.0.12",
+        "com.unity.xr.management": "4.0.1",
         "com.unity.modules.androidjni": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.arsubsystems": {
-      "version": "3.1.6",
+      "version": "4.0.12",
       "depth": 1,
       "source": "registry",
       "dependencies": {
