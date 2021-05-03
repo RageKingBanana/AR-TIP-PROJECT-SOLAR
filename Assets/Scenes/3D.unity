@@ -563,7 +563,7 @@ PrefabInstance:
     - target: {fileID: 5059865063837977216, guid: 00f458848b1768b49ae6ec22f4bef03f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5059865063837977216, guid: 00f458848b1768b49ae6ec22f4bef03f,
         type: 3}
@@ -1286,7 +1286,7 @@ PrefabInstance:
     - target: {fileID: 8622257725213488576, guid: 8e5189bfdcc5b6842bb1b3ae787d977c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8622257725213488576, guid: 8e5189bfdcc5b6842bb1b3ae787d977c,
         type: 3}
@@ -1438,7 +1438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2022307581}
-  speed: 10
+  speed: 0.17
 --- !u!114 &2022307580
 MonoBehaviour:
   m_ObjectHideFlags: 0
